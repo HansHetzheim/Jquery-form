@@ -1,0 +1,30 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+#mistake {
+    display: none;
+}
+form {
+    padding: 10px;
+}
+
+.passwordStrength{
+  display: flex;
+  margin: 5px;
+}
+#weak{
+  width: 50px;
+  height: 2px;
+  background-color: red;
+}
+#medium{
+  width: 50px;
+  height: 2px;
+  background-color: orange;
+}
+#strong{
+  width: 50px;
+  height: 2px;
+  background-color: green;
+}

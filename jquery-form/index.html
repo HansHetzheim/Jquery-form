@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactief Formulier</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="mistake">
+            <p>You did not fill out the form correctly</p>
+        </div>
+        <form>
+
+            <div class="form-group">
+                <label for="pseudo">Display Name</label>
+                <input type="text" id="name" class="form-control">
+                <p class="hidden" id="hiddenname">Must contain at least 5 characters</p>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" class="form-control">
+                <div class="passwordStrength">
+                  <div class="hidden" id="weak">    </div>
+                  <div class="hidden" id="medium">    </div>
+                  <div class="hidden" id="strong">    </div>
+                </div>
+                <p class="hidden" id="hiddenpassword">Must contain 8-15 characters and minimum one capital letter and one number.</p>
+            </div>
+            <div class="form-group">
+                <label for="pass-confirm">Confirmation</label>
+                <input type="password" id="pass-confirm" class="form-control">
+                <p class="hidden" id="hiddenrepeat">Repeat your password</p>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" class="form-control">
+                <p class="hidden" id="hiddenemail">example@yahoo.com</p>
+            </div>
+            <button type="submit" id="send" class="btn btn-default">Submit</button>
+            <button type="reset" id="reset" class="btn btn-default">Reset</button>
+        </form>
+    </div>
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
